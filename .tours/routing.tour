@@ -8,7 +8,7 @@
     },
     {
       "file": "src/routing.php",
-      "description": "Pour commencer nous récupérons la route demandée par notre utilisateur (ce qui n'est autre que l'URL sans la partie concernant le domaine).\r\n\r\nPar exemple :  \r\n`localhost/items/edit?id=5`\r\n- Le domaine est : `localhost`\r\n- La route est : `items/edit?id=5`\r\n\r\nLa route est facilement récupérable grace à $_SERVER. À l'instar de $_GET ou de  $_POST, $_SERVER est un tableau qui contient de nombreuses informations sur le server web (pour en savoir plus : [Doc](https://www.php.net/manual/fr/reserved.variables.server.php)). Ici nous récupérons l'index `PATH_INFO`",
+      "description": "Pour commencer nous récupérons la route demandée par notre utilisateur (ce qui n'est autre que l'URL sans la partie concernant le domaine).\r\n\r\nPar example :  \r\n`localhost/items/edit?id=5`\r\n- Le domaine est : `localhost`\r\n- La route est : `items/edit?id=5`\r\n\r\nLa route est facilement récupérable grace à $_SERVER. À l'instar de $_GET ou de  $_POST, $_SERVER est un tableau qui contient de nombreuses informations sur le server web (pour en savoir plus : [Doc](https://www.php.net/manual/fr/reserved.variables.server.php)). Ici nous récupérons l'index `PATH_INFO`",
       "line": 4,
       "selection": {
         "start": {
@@ -33,11 +33,11 @@
           "character": 55
         }
       },
-      "description": "Afin de savoir quelle partie de notre code appeler, nous devons d'abord charger toutes les routes définies pour notre application. Toutes ses routes sont déclarées dans `routes.php` "
+      "description": "Afin de savoir quelle partie de notre code appeler, nous devons d'abord charger toutes les routes définies pour notre application. Toutes ces routes sont déclarées dans `routes.php` "
     },
     {
       "file": "src/routes.php",
-      "description": "Dans ce tableau, nous déclarons toutes les routes de notre application.\r\n\r\nChaque route appellera une partie spécifique de notre code, et donc présentera un résultat différent.\r\n\r\nLe but d'une route est de guider une requête vers une action d'un contrôleur.\r\n\r\nPar exemple :",
+      "description": "Dans ce tableau, nous déclarons toutes les routes de notre application.\r\n\r\nChaque route appellera une partie spécifique de notre code, et donc présentera un résultat différent.\r\n\r\nLe but d'une route est de guider une requête vers une action d'un contrôleur.\r\n\r\nPar example :",
       "line": 8,
       "selection": {
         "start": {
@@ -90,7 +90,7 @@
           "character": 48
         }
       },
-      "description": "Comme tu peux le voir, un contrôleur n'est rien d'autre qu'une classe. Elle a néanmoins un role cruciale dans notre application MVC : c'est elle qui traite la requête HTTP d'entrée, et c'est également elle qui retourne la requête HTTP de réponse."
+      "description": "Comme tu peux le voir, un contrôleur n'est rien d'autre qu'une classe. Elle a néanmoins un rôle crucial dans notre application MVC : c'est elle qui traite la requête HTTP d'entrée, et c'est également elle qui retourne la requête HTTP de réponse."
     },
     {
       "file": "src/Controller/ItemController.php",
@@ -151,7 +151,7 @@
           "character": 17
         }
       },
-      "description": "Cette route par exemple : son but est de présenter les informations d'un item spécifique. Le problème est que dans la base de données, il pourrait y avoir des millions d'items ! Alors comment ne présenter que l'item que l'on souhaite voir 😰?"
+      "description": "Cette route par example : son but est de présenter les informations d'un item spécifique. Le problème est que dans la base de données, il pourrait y avoir des millions d'items ! Alors comment ne présenter que l'item que l'on souhaite voir 😰?"
     },
     {
       "file": "src/routes.php",

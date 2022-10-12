@@ -24,6 +24,7 @@ try {
         $sql = file_get_contents(DB_DUMP_PATH);
         $statement = $pdo->prepare($sql);
         $statement->execute();
+        echo "\n all good in tha hood\n";
     } else {
         echo DB_DUMP_PATH . ' file does not exist';
     }
