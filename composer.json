@@ -28,5 +28,10 @@
         "allow-plugins": {
             "phpro/grumphp": true
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cp -f ./config/db.docker.php ./config/db.php"
+        ]
     }
 }
