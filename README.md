@@ -70,11 +70,13 @@ To run the dockerized project => `docker compose up`
 
 ## authentication TODOS
 
-* start the session at the entry point of the app'
-* create a users/auth controller
-* sign up feature to create a user
-* encrypted passwords
-* login functionality
-* automated redirection to login form if not authed
-* add global to Twig to be able to refresh the display based on auth state
-* allow user to log out
+* ✅ start the session at the entry point of the app'
+* ✅ create a users/auth controller
+* ✅ sign up feature to create a user
+* ✅ encrypted passwords
+* ✅ login functionality
+* ✅ automated redirection to login form if not authed
+* ✅ add global to Twig to be able to refresh the display based on auth state
+* ✅ allow user to log out
+
+* BONUS step: CSRF protection

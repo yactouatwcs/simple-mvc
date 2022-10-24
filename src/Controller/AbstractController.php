@@ -25,5 +25,9 @@ abstract class AbstractController
             ]
         );
         $this->twig->addExtension(new DebugExtension());
+        $authed = $_SESSION['authed'] ?? false;
+        if ($authed) {
+            $this->twig->addGlobal('username', $_SESSION['username'] ?? '');
+        }
     }
 }
