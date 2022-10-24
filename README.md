@@ -66,14 +66,15 @@ If you don't know what is docker, skip this chapter. ;)
 
 Otherwise, you probably see, this project is ready to use with docker.
 
-To build the image, go into the project directory and in your CLI type:
+To run the dockerized project => `docker compose up`
 
-```
-docker build -t simple-mvc-container .
-```
+## authentication TODOS
 
-then, run it to open it on your localhost :
-
-```
-docker run -i -t --name simple-mvc  -p 80:80 simple-mvc-container
-```
+* start the session at the entry point of the app'
+* create a users/auth controller
+* sign up feature to create a user
+* encrypted passwords
+* login functionality
+* automated redirection to login form if not authed
+* add global to Twig to be able to refresh the display based on auth state
+* allow user to log out
